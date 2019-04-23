@@ -1,0 +1,13 @@
+2.取代的归一化层(在“CaffeMex_v2”中使用“layers/*”，并将“NormalizationParameter”添加到“caffe.proto”中;
+
+3.使用matlab接口(在CaffeMex\_v2中看到readme)。      --------实验设置进行到第二步----------
+
+4.将“CaffeMex_v2/matlab/+caffe”的路径配置到该项目的目录中。
+
+5.在“train_baseline/train_baseline”中配置参数.m”、“train_baseline / train_LPW.m’和‘train_PQAN / train_LPW.m”、“train_PQAN / train_network_and_test。
+m '，包括原txt的路径和相对的param。pretrain_model可以在这里找到(https://github.com/lim0606/caffe-googlenet-bn)。
+
+6.在“generate_data”中运行脚本以生成数据集。
+
+7.修改相应的网络分类数目。运行“train_baseline / train_baseline.m’或‘train_baseline / train_LPW.m ' for baseline and ' train_PQAN/train_LPW。
+米”、“train_PQAN / train_network_and_test。为PQAN m”。
